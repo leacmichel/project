@@ -50,6 +50,10 @@ inflation %>%
   ungroup() %>% 
   ggplot() +
   geom_line(aes(date, value, color = name)) +
+  theme_minimal() +
+  ylab("subjective inflation in %-points") +
+  labs(color = "") +
+  theme(legend.position = c(.1, .9)) +
   NULL
 ```
 
@@ -62,8 +66,8 @@ print("hello")
 # use a function without loading the package:
 # package::function
 usethis::use_git_config(
-  user.name = "Lea Micgel", # <-- change to your name
-  user.email = "lea.michel@radboudumc.nl", # <-- and your email
+  user.name = "leacmichel", # <-- change to your name
+  user.email = "lea.camille.michel@gmail.com", # <-- and your email
   init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
 
 usethis::use_git()
