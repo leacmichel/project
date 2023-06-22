@@ -57,10 +57,7 @@ inflation %>%
   NULL
 ```
 
-```{r}
-knitr::opts_chunk$set(echo = TRUE)
-print("hello")
-```
+
 
 
 # use a function without loading the package:
